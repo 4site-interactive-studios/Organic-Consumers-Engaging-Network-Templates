@@ -459,6 +459,7 @@ body#en__pagebuilder #main-content .en__component--active.en__component--activeT
   position: relative;
   margin-left: 2rem;
   cursor: pointer;
+  display: flex;
 }
 
 #main-content .en__field__input--radio+.en__field__label::before,

@@ -170,48 +170,55 @@ window.addEventListener('load', function() {
 
   // Add our form submit handler
   var form = document.querySelector('form.en__component');
-  form.addEventListener('submit', function(e) {
-    // add a class to the body to assist with EN's automatic scroll-to-first-error functionality
-    // when we have moved the error display to below the field instead of the default top location
-    document.querySelector('body').classList.add('error-jump-assist');
-    var valid_form = validatePaymentFields(window.getSelectedRadioValue(payment_method_name));// && (typeof window.en_nb_valid_email === 'undefined' || window.en_nb_valid_email);
+  if (form){
+    form.addEventListener('submit', function(e) {
+      // add a class to the body to assist with EN's automatic scroll-to-first-error functionality
+      // when we have moved the error display to below the field instead of the default top location
+      document.querySelector('body').classList.add('error-jump-assist');
+      var valid_form = validatePaymentFields(window.getSelectedRadioValue(payment_method_name));// && (typeof window.en_nb_valid_email === 'undefined' || window.en_nb_valid_email);
 
-    if(window.getDonationAmount() <= 0) {
-      var donation_fields = document.querySelector('input[name="transaction.donationAmt"]');
-      window.setError(donation_fields, 'Please select an amount.');
-      donation_fields.scrollIntoView(true);
-      valid_form = false;      
-    }
+      if(window.getDonationAmount() <= 0) {
+        var donation_fields = document.querySelector('input[name="transaction.donationAmt"]');
+        window.setError(donation_fields, 'Please select an amount.');
+        donation_fields.scrollIntoView(true);
+        valid_form = false;      
+      }
 
-    if(!valid_form) {
-      e.preventDefault();
-      e.stopImmediatePropagation();      
-      this.querySelector(submit_button_selector).disabled = false;
-      return false;
-    }
-  });
+      if(!valid_form) {
+        e.preventDefault();
+        e.stopImmediatePropagation();      
+        this.querySelector(submit_button_selector).disabled = false;
+        return false;
+      }
+    });
+  }
 
   // Initialize the current payment method
   handlePaymentMethod(window.getSelectedRadioValue(payment_method_name));
 
   // Initialize error wrapper handling for the errors produced by Engaging Networks
-  var form_inputs = form.getElementsByTagName('input');
-  for(var i = 0; i < form_inputs.length; i++) {
-    if(form_inputs[i].type == 'email')
-      window.attachAutomatedErrorWrappers(window.getFieldWrapper(form_inputs[i]).parentNode);
-    else
-      window.attachAutomatedErrorWrappers(window.getFieldWrapper(form_inputs[i]));    
-    window.clearErrorOnInputHandler(form_inputs[i]);
+  if (form){
+    var form_inputs = form.getElementsByTagName('input');
   }
-  var form_selects = form.getElementsByTagName('select');
-  for(var i = 0; i < form_selects.length; i++) {
-    window.attachAutomatedErrorWrappers(window.getFieldWrapper(form_selects[i]));
-    window.clearErrorOnInputHandler(form_selects[i]);
-  }    
-  var form_textareas = form.getElementsByTagName('textarea');
-  for(var i = 0; i < form_textareas.length; i++) {
-    window.attachAutomatedErrorWrappers(window.getFieldWrapper(form_textareas[i]));
-    window.clearErrorOnInputHandler(form_textareas[i]);
+  
+  if (form_inputs){
+    for(var i = 0; i < form_inputs.length; i++) {
+      if(form_inputs[i].type == 'email')
+        window.attachAutomatedErrorWrappers(window.getFieldWrapper(form_inputs[i]).parentNode);
+      else
+        window.attachAutomatedErrorWrappers(window.getFieldWrapper(form_inputs[i]));    
+      window.clearErrorOnInputHandler(form_inputs[i]);
+    }
+    var form_selects = form.getElementsByTagName('select');
+    for(var i = 0; i < form_selects.length; i++) {
+      window.attachAutomatedErrorWrappers(window.getFieldWrapper(form_selects[i]));
+      window.clearErrorOnInputHandler(form_selects[i]);
+    }    
+    var form_textareas = form.getElementsByTagName('textarea');
+    for(var i = 0; i < form_textareas.length; i++) {
+      window.attachAutomatedErrorWrappers(window.getFieldWrapper(form_textareas[i]));
+      window.clearErrorOnInputHandler(form_textareas[i]);
+    }
   }
 
   // Class-toggling for the input[name="transaction.donationAmt.other"] field

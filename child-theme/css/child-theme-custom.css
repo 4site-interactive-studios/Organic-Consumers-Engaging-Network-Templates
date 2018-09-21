@@ -5,7 +5,8 @@
 
 /* Add a background image when the page is not embedded or in the page builder */
 body:not(.embedded):not(#en__pagebuilder) {
-	background: #f3f3f3 url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1991/gray_pattern-optimized.jpg?v=1527883852000") repeat;
+	background: #ffffff url("../images/background/fruit-and-vegetables-seamless.png") repeat;
+	background-size: 400px;
 	background-position: left top;
 }
 
@@ -53,18 +54,11 @@ html.has-image body:not(.embedded):not(#en__pagebuilder) {
 	justify-content: flex-end;	
 }
 
-/* In the event paragraph text is added, remove tio margin to precent vertical mis-alignment when centering */
+/* In the event paragraph text is added, remove the margin to precent vertical mis-alignment when centering */
 .header-logo .en__component:first-child p,
 .header-secondary-cta .en__component:first-child p,
 .banner-image .en__component:first-child p{
 	margin-top: 0;
-}
-
-/* In the event paragraph text is added, remove bottom margin to precent vertical mis-alignment when centering */
-.header-logo .en__component:last-child p,
-.header-secondary-cta .en__component:last-child p,
-.banner-image .en__component:last-child p{
-	margin-bottom: 0;
 }
 
 .header-logo img,
@@ -115,73 +109,6 @@ body:not(#en__pagebuilder) .banner-image{
 
 #main-content .donation-amount{
     flex-wrap: wrap;
-}
-
-#main-content .donation-amount.radio-to-buttons.round-buttons .en__field__item--other{
-    background-image: url(https://apps.4sitestudios.com/temp/custom-template/images/other-formated.png);
-	background-size: 74px 36px;
-    background-position: 13px 18px;
-    background-repeat: no-repeat;
-}
-
-#main-content .donation-amount.radio-to-buttons.round-buttons input.en__field__input--other{
-	height: 100px;
-	width: 100px;
-	font-size: 34px;
-	font-weight: 600;
-	font-family: 'Work Sans', sans-serif;
-	color: #323232;
-	background: none;
-	border-radius: 0;
-	box-shadow: none;
-	border: 0;
-	/*
-    background-image: url("https://apps.4sitestudios.com/temp/custom-template/images/giving-other-placeholder-value.png");
-	background-repeat: no-repeat;
-    background-size: 32px 23px;
-    background-position: 27px 39px;
-    */
-}
-
-#main-content .donation-amount.radio-to-buttons.round-buttons input.en__field__input--other:focus{
-	background-image: none;
-}
-
-#main-content .donation-amount.radio-to-buttons.round-buttons .has-value.en__field__item--other{
-	background-image: url("https://apps.4sitestudios.com/temp/custom-template/images/surprise-formated.png");
-    background-color: #009bc4;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-	background-size: 74px 36px;
-}
-
-#main-content .donation-amount.radio-to-buttons.round-buttons .has-value input.en__field__input--other{
-	background-image: none;
-	color: #ffffff;
-}
-
-#main-content .donation-amount.radio-to-buttons.round-buttons label.en__field__label.en__field__label--item{
-	width: 68px;
-	height: 68px;
-	padding: 1rem;
-	font-size: 34px;
-	font-weight: 600;
-	font-family: 'Work Sans', sans-serif;
-}
-
-#main-content .donation-amount.round-buttons label:first-letter {
-    font-size: 20%;
-    color: #8A2BE2;
-}
-
-#main-content .donation-amount.round-buttons .en__field.en__field--radio .en__field__item:last-of-type{
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-#main-content .donation-amount.round-buttons .en__field__element.en__field__element--radio{
-	flex-wrap: wrap;
 }
 
 #main-content .banner{
@@ -288,23 +215,23 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 	/*box-shadow: 10px 0 0 red, -10px 0 0 red;*/
 }
 
-#main-content .banner-text.blue p{
+#main-content .banner-text.green p{
 	color: #ffffff;
 	display: inline;
-	background-color: #2ba8dd;
+	background-color: #0e8542;
 	padding: .4em 0;
 	position: relative;
-	box-shadow: 1em 0 0 0 #2ba8dd, -1em 0 0 0 #2ba8dd;
+	box-shadow: 1em 0 0 0 #0e8542, -1em 0 0 0 #0e8542;
 
 }
 
 #main-content .banner-text.red p{
 	color: #ffffff;
 	display: inline;
-	background-color: #e74b3c;
+	background-color: #d7334b;
 	padding: .4em 0;
 	position: relative;
-	box-shadow: 1em 0 0 0 #e74b3c, -1em 0 0 0 #e74b3c;
+	box-shadow: 1em 0 0 0 #d7334b, -1em 0 0 0 #d7334b;
 
 }
 
@@ -410,7 +337,7 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 }
 
 #main-content .red .en__submit button{
-	background-color: #e74b3c;
+	background-color: #d7334b;
 }
 
 #main-content .arrow .en__submit button::after{
@@ -463,11 +390,11 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 #main-content select,
 #main-content textarea,
 #main-content .radio-to-buttons label.en__field__label.en__field__label--item {
-	border-color: #323232;
+	/* border-color: #323232; */
 }
 
 #main-content #made-with-love{
-	color: #1294bf;
+	color: #d7334b;
 }
 
 #main-content img.oc-bbb-logo,
@@ -520,11 +447,11 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 }
 
 #main-content .en__share__button--facebook {
-    background-image: url(https://apps.4sitestudios.com/temp/custom-template/images/facebook.svg) !important;
+    background-image: url(../../parent-theme/images/facebook.svg) !important;
 }
 
 #main-content .en__share__button--twitter {
-    background-image: url(https://apps.4sitestudios.com/temp/custom-template/images/twitter.svg) !important;
+    background-image: url(../../parent-theme/images/twitter.svg) !important;
 }
 
 #main-content .en__share__button--gplus {
@@ -556,7 +483,36 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 	width: 90%;
 	margin: 0 auto;
 }
-    
+
+/************************************
+ * Error Messages Color
+ ***********************************/
+
+.en__errorHeader,
+.en__errorList > .en__error,
+#main-content .en__component .en__field__error,
+#main-content .en__component .en__field__error-wrapper .en__field__error,
+#main-content .en__component .en__field__error-wrapper input,
+#main-content .en__component .en__field__error-wrapper select,
+#main-content .en__component .en__field__error-wrapper textarea,
+#main-content .en__component .en__field__error-wrapper.en__field--splittext input,
+#main-content .en__component .en__field__error-wrapper.en__field--tripletext input,
+#main-content .en__component .en__field__error-wrapper.en__field--splitselect select,
+#main-content .en__component .en__field__error-wrapper.en__field--tripleselect input,
+#main-content .en__component .en__field__error-wrapper.en__field--splittext .en__field__error,
+#main-content .en__component .en__field__error-wrapper.en__field--tripletext .en__field__error,
+#main-content .en__component .en__field__error-wrapper.en__field--splitselect .en__field__error,
+#main-content .en__component .en__field__error-wrapper.en__field--tripleselect .en__field__error,
+#main-content .en__component .en__field__error-wrapper.en__field--radio.en__field--withOther .en__field__error{
+  border: 1px solid #d7334b;
+}
+	
+#main-content .give-by-select.radio-to-buttons.dark-buttons .en__field__element--radio .en__field__item label.en__field__label.en__field__label--item:hover,
+#main-content .give-by-select.radio-to-buttons.dark-buttons .en__field__element--radio .en__field__item input[type='radio']:checked + label {
+    background-color: #666666;
+    border-color: #666666;
+}
+
 /************************************
  * Medium Breakpoint (Mid Resolution Device)
  * At this breakpoint, rows elements expand to take up their own row

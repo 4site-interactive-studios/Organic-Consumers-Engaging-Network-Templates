@@ -77,10 +77,11 @@
 
 
     var form = document.querySelector('form.en__component');
-    form.addEventListener('submit', function(e) {
-      updateDonationAmount();
-    });
-
+    if (form){
+      form.addEventListener('submit', function(e) {
+        updateDonationAmount();
+      });
+    }
 
     function initializeBaseDonationAmounts() {
       var donation_amount_buttons = document.querySelectorAll('input[name="' + donation_amount_name + '"]');
