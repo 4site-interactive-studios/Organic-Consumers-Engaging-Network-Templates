@@ -532,7 +532,7 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 
 	/* Override EN Default Behavior */
 	.en__component--row.en__component--advrow {
-		display: flex;
+		display: flex !important;
 	}
 
 	.hide-medium{
