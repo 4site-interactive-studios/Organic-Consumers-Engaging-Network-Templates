@@ -5,7 +5,7 @@
 
 /* Add a background image when the page is not embedded or in the page builder */
 body:not(.embedded):not(#en__pagebuilder) {
-	background: #ffffff url("../images/background/fruit-and-vegetables-seamless-green-compressor") repeat;
+	background: #ffffff url("../images/background/fruit-and-vegetables-seamless-green-compressor.jpg") repeat;
 	background-size: 300px;
 	background-position: left top;
 }
