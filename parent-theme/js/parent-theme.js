@@ -1,6 +1,6 @@
 /************************************
  * Template: 4Site Template - Parent Theme Base
- * Project: TBD
+ * Project: Organic Consumers Association
  ***********************************/
 
 /************************************
@@ -181,9 +181,9 @@ Element.prototype.isVisible = function() {
 
   var donation_amount_name = 'transaction.donationAmt';
   var donation_amount_other_name = 'transaction.donationAmt.other';
-  var processing_fee_name = 'supporter.questions.180213';
+  var processing_fee_name = 'supporter.questions.64038';
   var payment_frequency_name = 'transaction.recurrpay';
-  var payment_source_name = 'supporter.questions.180165';
+  var payment_source_name = 'supporter.questions.637651';
   var payment_card_type = 'transaction.paymenttype';
   var field_wrapper_error_class = 'en__field__error-wrapper';
   var field_error_class = 'en__field__error';
@@ -1097,8 +1097,8 @@ window.addEventListener('load', function() {
     window.addEventListener('load', function() {
     
       // Input names and IDs we reference
-      var payment_method_wrapper_class_name = 'en__field--180165';
-      var payment_method_name = 'supporter.questions.180165';
+      var payment_method_wrapper_class_name = 'en__field--637651';
+      var payment_method_name = 'supporter.questions.637651';
       var payment_by_card_block_class_name = 'give-by-card';
       var payment_by_paypal_block_class_name = 'give-by-paypal';
       var payment_by_check_block_class_name = 'give-by-check';
@@ -1342,8 +1342,8 @@ window.addEventListener('load', function() {
       var donation_amount_name = 'transaction.donationAmt';
       var donation_amount_other_name = 'transaction.donationAmt.other';
       var payment_card_type_name = 'transaction.paymenttype';
-      var processing_fee_name = 'supporter.questions.180213';
-      var payment_method_wrapper_class_name = 'en__field--180165';
+      var processing_fee_name = 'supporter.questions.64038';
+      var payment_method_wrapper_class_name = 'en__field--637651';
   
       window.calculateProcessingFee = function() {
         var processing_fee_checkbox = document.querySelector('input[name="' + processing_fee_name + '"]');
@@ -1484,7 +1484,7 @@ window.addEventListener('load', function() {
     var donation_amount_name = 'transaction.donationAmt';
     var donation_amount_other_name = 'transaction.donationAmt.other';
     var processing_fee_present = (typeof window.calculateProcessingFee === 'function');
-    var processing_fee_name = 'supporter.questions.180213';
+    var processing_fee_name = 'supporter.questions.64038';
     var payment_frequency_name = 'transaction.recurrpay';
   
   
