@@ -531,7 +531,7 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 @media (max-width: 960px){
 
 	.header-secondary-cta{
-		position: absolute;
+		position: absolute !important;
 		top: 0;
 	}
 
