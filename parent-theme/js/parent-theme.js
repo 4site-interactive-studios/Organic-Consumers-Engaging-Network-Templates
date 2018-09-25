@@ -90,11 +90,13 @@ if (!Element.prototype.matches) {
           }
       
           var donate_other_input = document.querySelector('input[name="' + donate_amount_other_name + '"]');
-          if(index == -1 && select_other_if_amount_not_found) {
-            donate_other_input.checked = true;
-          } else {
-            donate_other_input.parentNode.classList.remove('has-value');
-            donate_other_input.value = '';
+          if(donate_other_input){
+            if(index == -1 && select_other_if_amount_not_found) {
+              donate_other_input.checked = true;
+            } else {
+              donate_other_input.parentNode.classList.remove('has-value');
+              donate_other_input.value = '';
+            }
           }
         }
       
@@ -113,8 +115,11 @@ if (!Element.prototype.matches) {
           selectDonationValue(select_index);
           if(select_index == -1 && select_other_if_amount_not_found) {
             var donate_other_input = document.querySelector('input[name="' + donate_amount_other_name + '"]');
-            donate_other_input.value = current_donation_amount;
-            donate_other_input.parentNode.classList.add('has-value');
+
+            if (donate_other_input){
+              donate_other_input.value = current_donation_amount;
+              donate_other_input.parentNode.classList.add('has-value');
+            }
           }
         }
       
@@ -132,7 +137,9 @@ if (!Element.prototype.matches) {
         var donation_frequency_buttons = document.querySelectorAll('input[name="' + payment_frequency_name + '"]');
         for(i = 0; i < donation_frequency_buttons.length; i++) {
           donation_frequency_buttons[i].addEventListener('change', function(e) {
-            processDonationValues();
+            if (processDonationValues){
+              processDonationValues();
+            }
           });
         }
       
