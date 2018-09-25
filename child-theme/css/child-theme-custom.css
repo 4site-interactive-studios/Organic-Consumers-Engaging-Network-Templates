@@ -54,11 +54,18 @@ html.has-image body:not(.embedded):not(#en__pagebuilder) {
 	justify-content: flex-end;	
 }
 
-/* In the event paragraph text is added, remove the margin to precent vertical mis-alignment when centering */
+/* In the event paragraph text is added, remove top margin to prevent vertical mis-alignment when centering */
 .header-logo .en__component:first-child p,
 .header-secondary-cta .en__component:first-child p,
 .banner-image .en__component:first-child p{
 	margin-top: 0;
+}
+
+/* In the event paragraph text is added, remove bottom margin to prevent vertical mis-alignment when centering */
+.header-logo .en__component:last-child p,
+.header-secondary-cta .en__component:last-child p,
+.banner-image .en__component:last-child p{
+	margin-bottom: 0;
 }
 
 .header-logo img,
