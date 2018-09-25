@@ -530,9 +530,9 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 
 @media (max-width: 960px){
 
-	/* Override EN Default Behavior */
-	.en__component--row.en__component--advrow {
-		display: flex !important;
+	.header-secondary-cta{
+		position: absolute;
+		top: 0;
 	}
 
 	.hide-medium{
