@@ -1911,6 +1911,10 @@ body.form-center #main-content-wrapper {
   background-position: center bottom;
 }
 
+#main-content .banner.image-position-center {
+  background-position: center center;
+}
+
 /* Temporary fix of EN Advanced Columns to add IE 11 support */
 /* REF: https://philipwalton.com/articles/normalizing-cross-browser-flexbox-bugs/ */
 /* REF: https://github.com/philipwalton/flexbugs#flexbug-4 */
