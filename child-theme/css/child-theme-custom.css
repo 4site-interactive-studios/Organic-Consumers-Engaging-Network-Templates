@@ -531,8 +531,8 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 @media (max-width: 40em){
 
 	.header-secondary-cta{
-		position: absolute !important;
-		top: 0;
+		/*position: absolute !important;
+		top: 0;*/
 	}
 
 	.hide-medium{
@@ -601,6 +601,12 @@ body:not(#en__pagebuilder) #main-content .banner-image{
     margin-right: 0rem;
   }  
  */
+}
+
+@media only screen and (max-width: 600px), only screen and (max-device-width: 600px){
+	.en__component--row, .en__component--row.en__component--advrow {
+		display: flex;
+	}
 }
 
 /************************************
