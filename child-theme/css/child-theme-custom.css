@@ -528,7 +528,7 @@ body:not(#en__pagebuilder) #main-content .banner-image{
  * REF: https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints
  ***********************************/
 
-@media (max-width: 960px){
+@media (max-width: 40em){
 
 	.header-secondary-cta{
 		position: absolute !important;
