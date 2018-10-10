@@ -530,10 +530,11 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 
 @media (max-width: 40em){
 
+	/*
 	.header-secondary-cta{
-		/*position: absolute !important;
-		top: 0;*/
-	}
+		position: absolute !important;
+		top: 0;
+	}*/
 
 	.hide-medium{
 		display: none !important;	
@@ -603,9 +604,10 @@ body:not(#en__pagebuilder) #main-content .banner-image{
  */
 }
 
+/* EN Defaults to making the divs blocks after 600px, we're keeping them Flexbox all the way down */
 @media only screen and (max-width: 600px), only screen and (max-device-width: 600px){
 	.en__component--row, .en__component--row.en__component--advrow {
-		display: flex;
+		display: flex !important;
 	}
 }
 
