@@ -520,6 +520,12 @@ body:not(#en__pagebuilder) #main-content .banner-image{
     border-color: #666666;
 }
 
+.header-secondary-cta {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
 /************************************
  * Medium Breakpoint (Mid Resolution Device)
  * At this breakpoint, rows elements expand to take up their own row
@@ -528,13 +534,9 @@ body:not(#en__pagebuilder) #main-content .banner-image{
  * REF: https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints
  ***********************************/
 
-@media (max-width: 40em){
+@media only screen and (max-width: 600px) {
 
-	/*
-	.header-secondary-cta{
-		position: absolute !important;
-		top: 0;
-	}*/
+
 
 	.hide-medium{
 		display: none !important;	
@@ -569,10 +571,6 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 		margin: 0 auto;
 	}
 
-	.form-side-by-side #main-content .en__component--row.en__component--advrow {
-	    display: block;
-	}
-
   /* Form switches from row to column display format */
   /*
   #main-content .en__component--formblock:not(.en-form-lazy-layout){
@@ -605,11 +603,8 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 }
 
 /* EN Defaults to making the divs blocks after 600px, we're keeping them Flexbox all the way down */
-@media only screen and (max-width: 600px), only screen and (max-device-width: 600px){
-	.en__component--row, .en__component--row.en__component--advrow {
-		display: flex !important;
-	}
-}
+
+
 
 /************************************
  * Medium Breakpoint (Mid Resolution Device)
