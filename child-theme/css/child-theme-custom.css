@@ -534,7 +534,7 @@ body:not(#en__pagebuilder) #main-content .banner-image{
  * REF: https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints
  ***********************************/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 960px) {
 
 
 
