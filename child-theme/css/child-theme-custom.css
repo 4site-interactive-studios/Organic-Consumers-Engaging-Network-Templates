@@ -137,43 +137,43 @@ body:not(.embedded):not(#en__pagebuilder) #main-content .banner:not(.no-image){
 }
 
 #main-content .banner.image-100h{
-	min-height: 100px;
+	height: 100px;
 }
 
 #main-content .banner.image-200h{
-	min-height: 200px;
+	height: 200px;
 }
 
 #main-content .banner.image-300h{
-	min-height: 300px;
+	height: 300px;
 }
 
 #main-content .banner.image-400h{
-	min-height: 400px;
+	height: 400px;
 }
 
 #main-content .banner.image-500h{
-	min-height: 500px;
+	height: 500px;
 }
 
 #main-content .banner.image-600h{
-	min-height: 600px;
+	height: 600px;
 }
 
 #main-content .banner.image-700h{
-	min-height: 700px;
+	height: 700px;
 }
 
 #main-content .banner.image-800h{
-	min-height: 800px;
+	height: 800px;
 }
 
 #main-content .banner.image-900h{
-	min-height: 900px;
+	height: 900px;
 }
 
 #main-content .banner.image-1000h{
-	min-height: 1000px;
+	height: 1000px;
 }
 
 #main-content .recurring-payment{
@@ -624,43 +624,56 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 @media (max-width: 1000px){
 
 	#main-content .banner.image-100h{
-		min-height: 100px;
+		height: 100px;
 	}
 
 	#main-content .banner.image-200h{
-		min-height: 200px;
+		height: 200px;
 	}
 
 	#main-content .banner.image-300h{
-		min-height: 300px;
+		height: 300px;
 	}
 
 	#main-content .banner.image-400h{
-		min-height: 300px;
+		height: 300px;
 	}
 
 	#main-content .banner.image-500h{
-		min-height: 400px;
+		height: 400px;
 	}
 
 	#main-content .banner.image-600h{
-		min-height: 400px;
+		height: 400px;
 	}
 
 	#main-content .banner.image-700h{
-		min-height: 400px;
+		height: 400px;
 	}
 
 	#main-content .banner.image-800h{
-		min-height: 500px;
+		height: 500px;
 	}
 
 	#main-content .banner.image-900h{
-		min-height: 500px;
+		height: 500px;
 	}
 
 	#main-content .banner.image-1000h{
-		min-height: 500px;
+		height: 500px;
+	}
+
+}
+
+/* Force display at full width on smaller resolution devices */
+@media only screen and (max-width: 1000px), only screen and (max-device-width: 1000px){
+	.en__component--row.en__component--advrow{
+		flex-wrap: wrap !important;
+	}
+
+	.indented-body,
+	.form-body{
+		flex-basis: 100% !important;
 	}
 
 }
