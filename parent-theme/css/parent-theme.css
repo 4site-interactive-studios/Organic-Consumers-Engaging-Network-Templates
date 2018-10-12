@@ -444,7 +444,7 @@ body:not(#en__pagebuilder):not(.embedded) #main-content-inner{
 }
 
 /* Below this breakpoint the main-content section is expanded to fill the full screen */
-@media (min-width: 40em) {
+@media (min-width: 1000px) {
   body {
     background-color: #eeeeee;
   }
