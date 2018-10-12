@@ -536,8 +536,6 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 
 @media only screen and (max-width: 960px) {
 
-
-
 	.hide-medium{
 		display: none !important;	
 	}
@@ -604,7 +602,11 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 
 /* EN Defaults to making the divs blocks after 600px, we're keeping them Flexbox all the way down */
 
-
+@media only screen and (max-width: 350px) {
+	.social-share{
+		color: transparent;
+	}
+}
 
 /************************************
  * Medium Breakpoint (Mid Resolution Device)
