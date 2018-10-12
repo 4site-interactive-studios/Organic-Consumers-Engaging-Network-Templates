@@ -933,7 +933,7 @@ function pageHasLoaded(e) {
         }
     
         if (countrySelecLabel == "United States"){
-             countrySelecLabel = "the United States";
+             countrySelecLabel = "the US";
         }	
         
         var countryWrapper = document.querySelector('.simple_country_select');
