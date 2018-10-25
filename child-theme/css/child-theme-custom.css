@@ -624,43 +624,43 @@ body:not(#en__pagebuilder) #main-content .banner-image{
 @media (max-width: 1000px){
 
 	#main-content .banner.image-100h{
-		height: 100px;
+		min-height: 100px;
 	}
 
 	#main-content .banner.image-200h{
-		height: 200px;
+		min-height: 200px;
 	}
 
 	#main-content .banner.image-300h{
-		height: 300px;
+		min-height: 300px;
 	}
 
 	#main-content .banner.image-400h{
-		height: 300px;
+		min-height: 300px;
 	}
 
 	#main-content .banner.image-500h{
-		height: 400px;
+		min-height: 400px;
 	}
 
 	#main-content .banner.image-600h{
-		height: 400px;
+		min-height: 400px;
 	}
 
 	#main-content .banner.image-700h{
-		height: 400px;
+		min-height: 400px;
 	}
 
 	#main-content .banner.image-800h{
-		height: 500px;
+		min-height: 500px;
 	}
 
 	#main-content .banner.image-900h{
-		height: 500px;
+		min-height: 500px;
 	}
 
 	#main-content .banner.image-1000h{
-		height: 500px;
+		min-height: 500px;
 	}
 
 }
