@@ -1308,8 +1308,7 @@ window.addEventListener("load", function() {
       }
 
       if (field_overrides[i].options) {
-        var opt_selected =
-          field_overrides[i].options[field_overrides[i].selectedIndex].value;
+        var opt_selected = field.options[field.selectedIndex].value;
         removeChildNodes(field);
         for (j = 0; j < field_overrides[i].options.length; j++) {
           var option = document.createElement("option");
