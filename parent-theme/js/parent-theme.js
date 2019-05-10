@@ -112,7 +112,7 @@ if (!Element.prototype.matches) {
     function replaceDonationValues(
       source_prefills,
       update_prefills,
-      prefill_value = 0
+      prefill_value
     ) {
       var donate_inputs = document.querySelectorAll(
         'input[name="' + donate_amount_name + '"]'
@@ -143,7 +143,7 @@ if (!Element.prototype.matches) {
       }
     }
 
-    function processDonationValues(prefill_value = 0) {
+    function processDonationValues(prefill_value) {
       var current_donation_frequency = window.getDonationFrequency();
       if (current_donation_frequency == " Monthly") {
         replaceDonationValues(single_prefills, monthly_prefills, prefill_value);
@@ -1308,11 +1308,15 @@ window.addEventListener("load", function() {
       }
 
       if (field_overrides[i].options) {
+        var opt_selected =
+          field_overrides[i].options[field_overrides[i].selectedIndex].value;
         removeChildNodes(field);
         for (j = 0; j < field_overrides[i].options.length; j++) {
           var option = document.createElement("option");
           option.value = field_overrides[i].options[j].value;
           option.text = field_overrides[i].options[j].label;
+          if (opt_selected == field_overrides[i].options[j].value)
+            option.selected = "selected";
           field.appendChild(option);
         }
       }
